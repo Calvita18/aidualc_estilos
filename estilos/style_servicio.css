@@ -1,0 +1,108 @@
+/* Estilos Servicio */
+* {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.form_wrap {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    background-image: url("../imagenes/estrella_difuminada.jpg");
+    background-position: 50%;
+}
+
+.container {
+    margin-top: 40px;
+}
+
+.form_wrap .info_title h2 {
+    font-size: 24px;
+}
+
+.form_wrap .info_items p {
+    color: #333;
+    font-size: 18px;
+}
+
+.form_wrap .form_contact h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+.form_wrap .form-group label {
+    color: #333;
+    font-size: 18px;
+}
+
+.form_wrap .btn-enviar {
+    background-color: #ff90c2;
+    border-color: #fe61af;
+}
+
+.form_wrap .btn-enviar:hover {
+    background-color: #ff90c2;
+    border-color: #fe61af;
+}
+
+.noVisible {
+    display: none;
+}
+
+.visible {
+    font-size: 16px;
+}
+
+.toast-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    pointer-events: none;
+}
+
+.close {
+    background-color: red;
+    color: white;
+}
+
+.toast {
+    width: 500px;
+    height: 150px;
+    animation: slideIn 0.5s ease-out forwards;
+    pointer-events: all;
+}
+
+.toast-body {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #ffffff;
+}
+
+.toast-container .toast.bg-success {
+    background-color: #ff69b4 !important;
+    border: 2px solid #00ffff !important; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.letra_pequena {
+    font-size: 14px;
+}

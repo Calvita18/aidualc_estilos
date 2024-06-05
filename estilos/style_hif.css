@@ -1,0 +1,220 @@
+/* Estilos del header */
+.navbar-principal {
+    background-color: #fdedf8;
+}
+
+.navbar-brand {
+    margin-right: 0;
+    padding: 5px; 
+}
+
+.navbar-brand img {
+    height: 50px; 
+}
+
+#logo {
+    width: 100px;
+    height: 90px;
+}
+
+.iconos-header {
+    display: flex;
+    margin-right: 5px; 
+    margin-left: 10px; 
+
+}
+
+.iconos-header2 {
+    margin-right: 5px; 
+    margin-left: 200px; 
+    display:inline-block;
+}
+
+/* @media (max-width: 768px) { 
+    .iconos-header {
+        margin-left: -17px; 
+        display: inline-block; 
+    } */
+
+    /* .iconos-header2 {
+        margin-left: -20px; 
+        display: inline-block; 
+    } */
+/* 
+    .iconos-header2 a:last-child {
+        margin-left: 0; 
+    } */
+
+/* } */
+
+.iconos-header a {
+    color: #333;
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.iconos-header a:hover {
+    color: #ff69b4;
+}
+
+.navbar-nav {
+        /* float: left; */
+        /* margin: 0; */
+        /* left: 50%;
+        transform: translatex(-50%); */
+        position: relative;
+        /* display: block; */
+        margin-left: 30px;
+       
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.navbar-nav li a.nav-link {
+    font-size: 18px;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 13px; 
+}
+
+.dropdown-menu {
+    background-color: #fdedf8 !important; 
+    border-radius: 40%;
+
+}
+
+.dropdown-item:hover {
+    background-color: #ff69b4 !important;
+}
+
+.navbar-text{
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 18px;
+}
+
+
+/* Estilos términos y cookies */
+.terminos-main {
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-image: url("../imagenes/estrella_hiper_dif.jpg");
+    background-position: center; 
+    background-repeat: repeat;
+    padding-bottom: 50px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #262626;
+    font-weight: bold;
+}
+
+.titulo{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+p {
+    color: #333;
+    font-size: 25px;
+}
+
+.terminos-main-cookies{
+    padding: 20px;
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-image: url("../imagenes/besos.jpg");
+    background-size: cover; 
+    background-position: center; 
+}
+/* Estilos footer */
+footer .main-footer { 
+    padding: 20px 0; 
+    background: #fdedf8; 
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 18px;
+    color: #ff69b4;
+    text-align: center;
+}
+footer ul {  
+    padding-left: 0;
+    list-style: none;
+}
+.gmail {
+    font-size: 18px;
+    color: #ff69b4;
+}
+.footer-copyright { 
+    background: #ffd4f2;
+    padding: 5px 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #ff69b4;
+}
+.footer-copyright nav ul {  
+    list-style: none; 
+    margin: 0;  
+    padding: 0;
+}
+.footer-copyright nav ul li {
+    border-left: 1px solid #ff69b4;
+    display: inline-block; 
+    line-height: 12px; 
+    margin: 0; 
+    padding: 0 8px;
+}
+.footer-copyright nav ul li a { 
+    color: #ff69b4;
+}
+.footer-copyright p {
+    color: #ff69b4; 
+    margin: 2px;
+}
+.widget-title span {
+    background: #ffd4f2;
+    display: block; 
+    height: 1px;
+    margin-top: 25px;
+    position: relative;
+    width: 20%;
+}
+.widget-title span::after {
+    background: inherit;
+    content: "";
+    height: inherit;  
+    position: absolute;
+    top: -4px;
+    width: 50%;
+}
+.widget li a { 
+    color: #ff69b4;
+}
+.widget li a:hover { 
+    color: #ff1493;
+}
+ul.iconos-footer a {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    color: #ff69b4;
+    font-size: 25px;
+}
+ul.iconos-footer a {
+    display: inline-block;
+    padding: 0;
+    margin-left: 5px;
+}
+ul.iconos-footer a:hover {
+    color: #ff1493;
+}
+
+

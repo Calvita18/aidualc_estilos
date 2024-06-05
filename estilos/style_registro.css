@@ -1,0 +1,215 @@
+.noVisible {
+    display: none;
+}
+
+body {
+    background-color: #ffe4e1;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #ff69b4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 15px; /* Añadir padding para evitar cortes laterales */
+}
+
+.card {
+    background-color: #fce1ea;
+    border: 2px solid #ff69b4;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px; /* Limitar el ancho máximo */
+    box-sizing: border-box; /* Incluir padding y border en el ancho total */
+}
+
+.card-header {
+    color: #ff1493;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.card-body {
+    text-align: center;
+    padding: 0; /* Eliminar padding adicional */
+}
+
+.form-control {
+    background-color: #fff;
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box; /* Incluir padding y border en el ancho total */
+}
+
+.form-control:focus {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+    background-color: #ff69b4;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #ff1493;
+}
+
+#contra {
+    position: relative;
+}
+
+#mostrar {
+    position: absolute;
+    top: 63%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.2s ease-in-out;
+    font-size: 20px;
+}
+
+#contra:focus + #mostrar {
+    color: #c9c6c6;
+}
+
+.fa-circle-info {
+    margin-left: 5px;
+    color: #ccc;
+    font-size: 14px;
+}
+
+#registrar {
+    background-color: #ff69b4;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    margin-top: 20px;
+    width: 100%;
+}
+
+#registrar:hover {
+    background-color: #ff1493;
+}
+
+.cuenta {
+    color: #ff69b4;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#enlace {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#enlace:hover {
+    color: #fcd2e7;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-label {
+    display: block;
+    color: #ff69b4;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 100%; /* Ajustar ancho a 100% */
+    outline: none;
+    border: 2px solid #ff69b4;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-sizing: border-box; /* Incluir padding y border en el ancho total */
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group .fa-eye-slash, .fa-eye {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.fa-chevron-left {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    text-decoration: none;
+    color: #ff007f;
+}
+
+@media (max-width: 767px) {
+    .container {
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .card-header {
+        font-size: 20px;
+        padding: 10px 0;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    form input {
+        padding: 10px 15px;
+    }
+
+    .form-group .fa-eye-slash, .fa-eye {
+        padding-top: 15px;
+    }
+
+    .btn-primary, #registrar {
+        padding: 10px 15px;
+    }
+
+    .fa-chevron-left {
+        top: 10px;
+        right: 10px;
+    }
+}

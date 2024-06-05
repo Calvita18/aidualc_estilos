@@ -1,0 +1,57 @@
+/* Estilos para el cuerpo */
+.body-editar {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #ffcccc; /* Rosa claro */
+    padding: 20px;
+}
+
+.editar-h1 {
+    color: #ff1493;
+    font-size: 3em;
+    text-shadow: 2px 2px #ff69b4;
+    margin: 15px 0;
+    text-align:center;
+}
+
+.formulario-editar-producto {
+    background-color: #fff; /* Blanco */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    min-width: 300px;
+}
+
+.formulario-editar-producto label {
+    color: #ff0080; 
+    font-weight: bold;
+}
+
+.formulario-editar-producto input[type="text"],
+.formulario-editar-producto input[type="number"],
+.formulario-editar-producto textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ff0080; 
+    border-radius: 5px;
+}
+
+.formulario-editar-producto textarea {
+    height: 100px;
+}
+
+.formulario-editar-producto button {
+    background-color: #ff0080; /* Rosa oscuro */
+    color: #fff; /* Blanco */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.formulario-editar-producto button:hover {
+    background-color: #ff66b3; /* Rosa claro */
+}
+

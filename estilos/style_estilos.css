@@ -1,0 +1,143 @@
+/* Estilos para el cuerpo */
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+
+.nombre-producto {
+    color: red; 
+    font-weight: bold;
+}
+
+
+/* Estilos para el contenedor principal */
+.container {
+    max-width: 90%;
+    margin: 20px auto; 
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+/* Estilos para el contenedor de resultados */
+.results-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto; 
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+/* Estilos para los elementos de producto */
+.item {
+    display: flex; /* Cambiar a un layout de caja flexible */
+    flex-direction: column; /* Apilar el contenido verticalmente */
+    align-items: center; /* Centrar el contenido horizontalmente */
+    width: calc(33.33% - 20px);
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    
+}
+
+.item-content {
+    padding: 10px;  
+}
+
+.item:hover {
+    transform: translateY(-5px); /* Ajustar el efecto de levantamiento */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+.item img {
+    width: 50%; /* Establece el ancho de la imagen al 100% del contenedor */
+    height: 250px; /* Para mantener la proporción de la imagen */
+    border-radius: 10px;
+    margin-bottom: 15px;
+    align-self: center; /* Centrar la imagen horizontalmente */
+}
+
+
+.item-content h2 {
+    font-size: 1.2rem; /* Aumentar el tamaño del título */
+    margin-bottom: 10px;
+    color: #ff69b4;
+    flex-grow: 1; 
+}
+
+.item-content p {
+    font-size: 1rem; /* Aumentar el tamaño del texto */
+    margin-bottom: 15px;
+    color: #333333;
+}
+
+.tallas-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.talla {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 12px;
+    background-color: #ffffff;
+    color: #ff69b4;
+    border: 2px solid #ff69b4;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.talla.selected {
+    background-color: #ff69b4;
+    color: #ffffff;
+}
+
+.anadir_carrito {
+    background: linear-gradient(to right, #ff69b4, #ffafd7); 
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 4px;
+    font-size: 1rem;
+}
+
+.anadir_carrito:hover {
+    background-color: #fe9acc;
+}
+
+.btn{
+    margin-top: 3px;
+
+}
+/* Media queries para hacer el diseño responsive */
+@media screen and (max-width: 1024px) {
+    .item {
+        width: calc(50% - 20px); /* Ajustar el ancho de los elementos en pantallas medianas */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .item {
+        width: calc(50% - 20px); /* Ajustar el ancho de los elementos en pantallas pequeñas */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .item {
+        width: calc(100% - 20px); /* Ajustar el ancho de los elementos en pantallas aún más pequeñas */
+    }
+
+
+}
